@@ -1,0 +1,99 @@
+<div>
+
+     <div class="container-fluid" style="height:100px; background-color:rgb(255, 102, 0); border-radius:0px 0px 0px 60px;">
+     <div  >
+     <h5 class="pt-4 ps-5" style="color:whitesmoke">Back</h5>
+     </div>
+     <div>
+     <h4 class="d-flex justify-content-center" style="color:whitesmoke; position: relative; bottom:25px;">Order #1103</h4>
+     </div>
+</div>
+
+</div>
+
+<div class="d-flex justify-content-center mt-5">
+    <button class="btn btn-outline-danger p-4 w-25 ">Scan order</button>
+</div>
+
+<div class="row ps-4 pe-4 mt-5">
+    <div class="col d-flex justify-content-start">
+       <h1 style="color: darkorange;">Packages</h1>
+    </div>
+    <div class="col d-flex justify-content-end">
+       <h4 class="mt-2">Total:3</h4>
+    </div>
+</div>
+
+<div class="px-4 py-2" *ngFor="let o of array">
+<div class="container-fluid " style="border:2px darkorange solid;border-radius: 15px;">
+    <div class="row px-4">
+    <div class="col-2 d-flex align-items-center ps-0">
+       <h3>1</h3>
+    </div>
+    <div class="col-5 d-flex flex-column">
+        <div class="p-2 m-3 d-flex flex-column align-items-center ">
+          <div ><strong>Package Type</strong></div>
+          <div >{{o.name}}</div>
+        </div>
+        <div class="p-2 m-3  d-flex flex-column align-items-center ">
+            <div><strong>Weight</strong></div>
+    <div> {{o.weight}}      </div>
+        </div>
+    </div>
+
+    <div class="col-5 d-flex flex-column ">
+        <div class="p-2 m-3 d-flex flex-column align-items-center">
+            <div><strong>L*W*H (cm)</strong></div>
+            <div> {{o.lwh}}       </div>
+          </div>
+          <div class="p-2 m-3 d-flex flex-column align-items-center">
+              <div><strong>Boxes#</strong></div>
+              <div>  {{o.box}}     </div>
+          </div>
+    </div>
+    </div>
+    </div>
+
+    
+</div>
+<div>
+    <h2  class="ms-4 mt-4" style="color:darkorange">Additional Info</h2>
+</div>
+<div class="container-fluid">
+    <div class="row m-3" style="border:2px darkorange solid; border-radius:15px">
+       <div class="col-6">
+       <div class="d-flex flex-column p-4 w-100">
+         <div class="m-3 d-flex flex-column align-items-center">
+             <p>From Address</p>
+             <p><strong>Karimnagar</strong></p>
+         </div>
+         <div  class="m-3 d-flex flex-column align-items-center">
+            <p>Order Date</p>
+            <p><strong>03/11/1997</strong></p>
+         </div>
+          <div  class="m-3 d-flex flex-column align-items-center">
+            <p>Order Value</p>
+            <p><strong>3000</strong></p>
+          </div>
+        </div>
+       </div>
+       <div class="col-6">
+        <div class="d-flex flex-column p-4 w-100">
+            <div class="m-3 d-flex flex-column align-items-center">
+                <p>To Address</p>
+                <p><strong class="w-100">Warehouse</strong></p>
+            </div>
+            <div  class="m-3 d-flex flex-column align-items-center">
+               <p>Order Status</p>
+               <p><strong>InTransit</strong></p>
+            </div>
+             <div  class="m-3 d-flex flex-column align-items-center">
+               <p>Total Packages</p>
+               <p><strong>1</strong></p>
+             </div>
+           </div>
+       </div>
+
+    </div>
+</div>
+
